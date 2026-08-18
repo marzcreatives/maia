@@ -1,6 +1,7 @@
 # MAIA
 
-[Preview](/maia-title.png)
+<img width="1440" height="900" alt="maia-title" src="https://github.com/user-attachments/assets/8d953c19-a1b4-4aeb-8220-72b3d675505d" />
+
 
 MAIA is an Islamic wellbeing application featuring an emotion tracker and guided chatbot experience designed to support reflection and emotional awareness.
 
