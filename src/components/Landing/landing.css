@@ -8,13 +8,13 @@
 #headerBox {
     background-color: var(--bgSecondary);
     height: 50px;
-    margin: 16px;
+    margin: 10px;
     margin-bottom: 0;
     display: flex;
     justify-content: center;
     border-radius: 5px;
     box-shadow: none;
-    padding: 20px;
+    padding: 16px;
     box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
 }
 
@@ -31,7 +31,7 @@
 
 #calendarStripContainer {
     padding: 0 16px;
-    margin-top: 120px;
+    margin-top: 10px;
     width: 100%;
     box-sizing: border-box;
 }

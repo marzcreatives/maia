@@ -1,4 +1,3 @@
-
 /** @jsxImportSource @emotion/react */
 import { useState } from "react";
 import { Box, Typography, IconButton } from "@mui/material";
@@ -75,7 +74,7 @@ const FeelingPage = () => {
       <IconButton
         onClick={handleBackNavigate}
         sx={{
-          marginTop: "80px",
+          marginTop: "100px",
           color: "var(--main)",
         }}
       >
@@ -93,7 +92,7 @@ const FeelingPage = () => {
           textAlign: "center",
           margin: "2rem",
           paddingTop: "20px",
-          paddingBottom: "100px"
+          paddingBottom: "100px",
         }}
       >
         How did your day feel today?
@@ -156,7 +155,7 @@ const FeelingPage = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "220px",
+          marginTop: "200px",
         }}
       >
         <IconButton

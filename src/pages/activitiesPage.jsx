@@ -146,7 +146,7 @@ const ActivitiesPage = () => {
 
   const handleNavigate = async () => {
     const selectedActivitiesLabels = selectedFeedback.map(
-      (index) => activities[index].label
+      (index) => activities[index].label,
     );
     const postData = {
       feeling,
@@ -174,7 +174,7 @@ const ActivitiesPage = () => {
       <IconButton
         onClick={handleBackNavigate}
         sx={{
-          marginTop: "80px",
+          marginTop: "90px",
           color: "var(--main)",
         }}
       >
@@ -201,13 +201,12 @@ const ActivitiesPage = () => {
 
         <Box
           sx={{
-            width: "80vw",
-            maxWidth: "100vw",
+            width: "40vw",
+            maxWidth: "50vw",
             margin: "0 auto",
             display: "flex",
             justifyContent: "center",
             flexWrap: "wrap",
-            gap: "1vw",
           }}
         >
           {activities.map((activity, index) => (

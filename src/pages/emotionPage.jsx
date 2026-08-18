@@ -191,10 +191,10 @@ const EmotionPage = () => {
 
   const handleNavigate = () => {
     const selectedEmotionObjects = reorderedEmotions.filter((_, index) =>
-      selectedEmotions.includes(index)
+      selectedEmotions.includes(index),
     );
     const selectedEmotionLabels = selectedEmotionObjects.map(
-      (emotion) => emotion.label
+      (emotion) => emotion.label,
     );
 
     if (selectedFeedbackValue && selectedEmotionLabels.length > 0) {
@@ -220,7 +220,7 @@ const EmotionPage = () => {
       <IconButton
         onClick={handleBackNavigate}
         sx={{
-          marginTop: "80px",
+          marginTop: "100px",
           color: "var(--main)",
         }}
       >
@@ -247,13 +247,13 @@ const EmotionPage = () => {
 
         <Box
           sx={{
-            width: "80vw",
-            maxWidth: "100vw",
+            width: "37vw",
+            maxWidth: "50vw",
             margin: "0 auto",
             display: "flex",
             justifyContent: "center",
             flexWrap: "wrap",
-            gap: "3vw",
+            gap: "1vw",
           }}
         >
           {reorderedEmotions.map((emotion, index) => {
@@ -293,7 +293,7 @@ const EmotionPage = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "100px",
+          marginTop: "90px",
         }}
       >
         <IconButton

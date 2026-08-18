@@ -18,8 +18,8 @@ const colors = {
 };
 
 const Calendar = ({ trackedData }) => {
-  // Hardset today as 29th November 2024
-  const today = new Date("2024-11-29");
+  // Use actual today so calendar highlights the real current date
+  const today = new Date();
   const navigate = useNavigate();
 
   const getDaysInMonthGrid = (month) => {

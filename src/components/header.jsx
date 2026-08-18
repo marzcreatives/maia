@@ -11,7 +11,7 @@ export const Header = () => {
   };
 
   return (
-    <AppBar id="header" position="fixed" onClick={handleNavigation}>
+    <AppBar id="header" position="static" onClick={handleNavigation}>
       <Box id="headerBar">
         <Icon className="headerText" alt="MAIA" icon="logo" id="iconSmall" />
       </Box>
