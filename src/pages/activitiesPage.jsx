@@ -162,7 +162,7 @@ const ActivitiesPage = () => {
     try {
       console.log("here", postData);
       await axios.post("http://localhost:3001/api/user-feelings/", postData);
-      navigate("/maia", { state: dataForMaia });
+      navigate("/chat", { state: dataForMaia });
     } catch (error) {
       console.error("Error submitting data:", error);
     }

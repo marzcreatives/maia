@@ -112,8 +112,8 @@ function App() {
               <Route path="/feeling" element={<FeelingPage />} />
               <Route path="/emotion" element={<EmotionPage />} />
               <Route path="/activities" element={<ActivitiesPage />} />
-              <Route path="/maia" element={<Chatbot />} />
-              <Route path="/chat" element={<Chatbot2 />} />
+              <Route path="/chat" element={<Chatbot />} />
+              <Route path="/chatbot" element={<Chatbot2 />} />
               <Route
                 path="/tracker"
                 element={<Tracker trackedData={trackedDataObject} />}
