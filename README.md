@@ -1,69 +1,60 @@
-# Maia App
+# MAIA
 
+[Preview](/maia-title.png)
 
-## Project Description
+MAIA is an Islamic wellbeing application featuring an emotion tracker and guided chatbot experience designed to support reflection and emotional awareness.
 
-Maia is our very own islamic app with an emotion tracker and chatbot. 
+## Portfolio Version
 
-### Main technologies used
+This version focuses on the user interface, user experience, and frontend implementation. Certain features have been simplified or mocked to showcase the application's design and functionality without requiring external services.
 
-Frontend: Javascript and React
+## Technologies Used
 
-Backend: Python and Node.js
-![python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+### Frontend
 
-Database: Mongodb
+- React
+- JavaScript
+- Vite
+- CSS
 
-#### Frontend
+## Features
 
-##### React + Vite
+- Emotion tracking
+- Interactive chatbot experience
+- Islamic-inspired wellbeing resources
+- Responsive user interface
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
 
-Currently, two official plugins are available:
+### Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ensure you have the following installed:
 
+- Git
+- Node.js
+- npm
 
-#### Backend
+If Git is not installed, download it from the [official Git website](https://github.com/git-guides/install-git)
 
-The libraries used were Flask, pymongo and google.generativeai.
+### Installation
 
-Flask - create API endpoints to connect with the front end to display the chatbot responses.
-
-pymongo - Mongodb Python SDK to interact with mongodb.
-
-google.generativeai - to access the model for the chatbot.
-
-## Installation instructions
-Git is used to manage and track the process of the project. If git is not installed check [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-
-To clone this project:
-
-```bash
-git clone https://github.com/Tech-Sisters/hackathon24-team2.git
-```
-
-If SSH is set up. HIGHLY recommend!
-
-This project uses the conda environment
-
-For a full list of the project's dependencies, check the enviroment.yml file in the project's root directory.
-
-### For conda users
-To create and activate the new enviroment:
+Clone the repository:
 
 ```bash
-conda env create -f environment.yml
-
- conda activate new_environment_name
+git clone https://github.com/marzcreatives/maia.git
+cd maia
 ```
 
-### For pip users:
-run the following commands to create the mrdc environment
+Install dependencies:
 
 ```bash
-./env_setup_for_pip_users.sh
+npm install
 ```
 
+### Run the Game
+
+From the project root directory:
+```bash
+vite
+```
+ 
