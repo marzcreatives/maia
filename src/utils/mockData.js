@@ -165,7 +165,7 @@ const filledMockData = (() => {
   const len = baseMockData.length;
   const today = new Date();
   const start = new Date(today);
-  start.setDate(today.getDate() - (len - 1));
+  start.setDate(today.getDate() - len);
   return baseMockData.map((item, idx) => {
     const d = new Date(start);
     d.setDate(start.getDate() + idx);

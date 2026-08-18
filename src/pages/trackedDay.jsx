@@ -81,7 +81,7 @@ const TrackedDay = () => {
       <IconButton
         onClick={handleBackNavigate}
         sx={{
-          marginTop: "80px",
+          marginTop: "100px",
           color: "var(--main)",
         }}
       >

@@ -10,7 +10,6 @@ import Chatbot from "./pages/chatbot";
 import Tracker from "./pages/tracker";
 import TrackedDay from "./pages/trackedDay";
 import mockTrackedData from "./utils/mockData";
-import Landing2 from "./pages/landing2";
 import Chatbot2 from "./pages/chatbot2";
 
 // const formatDate = (isoDateString) => {
@@ -120,7 +119,6 @@ function App() {
                 element={<Tracker trackedData={trackedDataObject} />}
               />
               <Route path="/tracker/:date" element={<TrackedDay />} />
-              <Route path="/home" element={<Landing2 />} />
             </Routes>
           </div>
         </div>

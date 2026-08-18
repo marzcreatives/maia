@@ -20,7 +20,7 @@ const Footer = () => {
       <BottomNavigationAction
         className="footerIcon"
         icon={<Icon alt="Home Icon" icon="home" />}
-        onClick={() => handleNavigation("/home")}
+        onClick={() => handleNavigation("/")}
       />
       <BottomNavigationAction
         className="footerIcon"
@@ -35,7 +35,7 @@ const Footer = () => {
       <BottomNavigationAction
         className="footerIcon"
         icon={<Icon alt="User Icon" icon="user" />}
-        onClick={() => handleNavigation("/settings")}
+        // onClick={() => handleNavigation("/settings")}
       />
     </BottomNavigation>
   );
