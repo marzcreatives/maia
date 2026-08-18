@@ -1,0 +1,88 @@
+#calendarContainer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    padding: 16px;
+    margin-top: 70px;
+    flex: 1; 
+   overflow-y: auto; 
+   margin-bottom: 60px; 
+   -ms-overflow-style: none;  
+   scrollbar-width: none;
+  }
+  
+  .monthHeader {
+    grid-column: span 7;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 16px;
+  }
+  
+  .dateTile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--textBlack);
+  }
+  
+  .currentDay {
+    border: 2px solid var(--main);
+  }
+  
+  .dataRow {
+    margin: 16px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    white-space: pre-line;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+  }
+  
+  #dataTitle {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .dataRow p {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: var(--textBlack);
+  }
+  
+  .dataRow strong {
+    color: var(--dark);
+    font-size: 1.2rem;
+  }
+  
+  .noteTextarea {
+    width: calc(100% - 16px);
+    height: 20vh;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    color: var(--textBlack);
+    background-color: var(--bgSecondary);
+    border: 1px solid var(--main);
+    margin-top: 5px;
+  }
+  
+  .saveButton {
+    color: var(--dark);
+    border: 1px solid var(--accent);
+  }
+
+  .saveButton:hover {
+    border-color: transparent;
+    background-color: var(--main);
+    color: white;
+
+  }
