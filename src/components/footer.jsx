@@ -25,7 +25,7 @@ const Footer = () => {
       <BottomNavigationAction
         className="footerIcon"
         icon={<Icon alt="Chat Icon" icon="chat" />}
-        onClick={() => handleNavigation("/maia")}
+        onClick={() => handleNavigation("/chat")}
       />
       <BottomNavigationAction
         className="footerIcon"

@@ -25,7 +25,7 @@ const Landing = ({ trackedData }) => {
         image={bgGreen}
         align="right"
         data={trackedData}
-        link="/maia"
+        link="/chat"
       />
       <Footer />
     </div>
