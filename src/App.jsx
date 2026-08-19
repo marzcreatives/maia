@@ -1,7 +1,5 @@
 import "./App.css";
-// import axios from "axios";
-// import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/landing";
 import FeelingPage from "./pages/feelingPage";
 import EmotionPage from "./pages/emotionPage";
@@ -12,60 +10,7 @@ import TrackedDay from "./pages/trackedDay";
 import mockTrackedData from "./utils/mockData";
 import Chatbot2 from "./pages/chatbot2";
 
-// const formatDate = (isoDateString) => {
-//   const date = new Date(isoDateString);
-//   const year = date.getFullYear();
-//   const month = String(date.getMonth() + 1).padStart(2, "0");
-//   const day = String(date.getDate()).padStart(2, "0");
-
-//   return `${year}${month}${day}`;
-// };
-
 function App() {
-  // const [trackedData, setTrackedData] = useState(null);
-  // const [trackedDataObject, setTrackedDataObject] = useState(null);
-  // const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //   const fetchTrackedData = async () => {
-  //     let object = null;
-
-  //     try {
-  //       const response = await axios.get(
-  //         "http://localhost:3001/api/user-feelings/"
-  //       );
-  //       const formattedData = response.data.data.map((entry) => {
-  //         return {
-  //           date: formatDate(entry.createdAt),
-  //           feeling: entry.feeling,
-  //           emotions: entry.emotion,
-  //           activities: entry.reason,
-  //           extraNotes: entry.extraNotes,
-  //         };
-  //       });
-  //       object = formattedData?.reduce((acc, item) => {
-  //         acc[item.date] = item.feeling;
-  //         return acc;
-  //       }, {});
-  //       setTrackedDataObject(object);
-  //       setTrackedData(formattedData);
-  //     } catch (error) {
-  //       // Handle network or server errors
-  //       console.error("Network error:", error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-  //   fetchTrackedData();
-  // }, []);
-  // if (loading) {
-  //   return <div>Loading...</div>;
-  // }
-
-  // if (!trackedData || !trackedDataObject) {
-  //   return <div>No data available</div>;
-  // }
-
   // Map mock data so the last entry corresponds to today,
   // and earlier entries fill previous days backwards.
   const formatDate = (date) => {
@@ -101,7 +46,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <BrowserRouter basename="/maia">
         <div className="device-outer">
           <div className="device">
             <Routes>
@@ -122,7 +67,7 @@ function App() {
             </Routes>
           </div>
         </div>
-      </Router>
+      </BrowserRouter>
     </>
   );
 }
